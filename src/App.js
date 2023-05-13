@@ -3,7 +3,6 @@ import "./App.css";
 import Card from "./components/Card/Card.js";
 import { Navbar } from "./components/Navbar/Navbar";
 import { getAllPokemon, getPokemon } from "./utils/pokemon.js";
-import { Search } from "./components/Search/Search.js";
 
 function App() {
   const initialURL = "https://pokeapi.co/api/v2/pokemon";
@@ -58,7 +57,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <Search />
       <div className="App">
         {loading ? (
           <h1>now loading</h1>
